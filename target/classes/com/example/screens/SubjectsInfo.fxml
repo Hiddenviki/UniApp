@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF #FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.screens.data.enrolleeControllers.SubjectsController">
+   <children>
+      <VBox fx:id="vbox" alignment="CENTER" layoutX="169.0" layoutY="159.0" prefHeight="70.0" prefWidth="280.0" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="165.0">
+         <children>
+            <VBox fx:id="mainVbox" alignment="CENTER" prefHeight="37.0" prefWidth="246.0">
+               <children>
+                  <ToolBar fx:id="toolBar1" accessibleRole="PARENT" maxWidth="420.0" minHeight="-Infinity" minWidth="410.0" prefHeight="39.0" prefWidth="384.0" style="-fx-background-radius: 10;">
+                     <items>
+                        <Button fx:id="deliteButton1" alignment="CENTER" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-radius: 20;" text="-">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <ChoiceBox fx:id="subject1" maxWidth="260.0" minWidth="250.0" prefHeight="26.0" prefWidth="250.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" />
+                        <TextField fx:id="score1" alignment="CENTER" maxWidth="90.0" minWidth="80.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-radius: 20;" />
+                        <Button fx:id="moreButton1" alignment="CENTER" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" onAction="#ClickToAddSubject" prefHeight="25.0" prefWidth="25.0" style="-fx-background-radius: 20;" text="+">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </items>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ToolBar>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <Button fx:id="editSaveSubjectButton" mnemonicParsing="false" onAction="#ClickToEditSaveSubject" prefHeight="32.0" style="-fx-background-color: #258EFF;" text="Редактировать" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="704.0" style="-fx-background-color: #1257c7#1257c7;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.screens.RegistrationController">
+    <children>
+        <AnchorPane layoutX="-2.0" layoutY="69.0" prefHeight="334.0" prefWidth="706.0" style="-fx-background-color: fafafa; -fx-border-radius: 5;">
+         <children>
+            <TextField layoutX="273.0" layoutY="155.0" text="HHH" />
+         </children>
+        </AnchorPane>
+        <Label layoutX="192.0" layoutY="18.0" text="Завод:выпуск изделий" textFill="#fafafa">
+            <font>
+                <Font name="Georgia Bold" size="26.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

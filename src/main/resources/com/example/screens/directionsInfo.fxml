@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.screens.data.enrolleeControllers.DirectionsController">
+   <children>
+      <VBox alignment="CENTER" layoutX="42.0" layoutY="69.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="направление 1" />
+            <ChoiceBox fx:id="firstDirection" prefHeight="39.0" prefWidth="517.0" style="-fx-background-radius: 10;" />
+            <Label text="направление 2" />
+            <ChoiceBox fx:id="secondDirection" prefHeight="39.0" prefWidth="517.0" style="-fx-background-radius: 10;" />
+            <Label text="направление 3" />
+            <ChoiceBox fx:id="thirdDirection" prefHeight="39.0" prefWidth="517.0" style="-fx-background-radius: 10;" />
+            <Button id="reduct_button_ach" fx:id="edit_button_3" mnemonicParsing="false" onAction="#ClickToEditSaveDirections" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: #258EFF;" text="Редактировать" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

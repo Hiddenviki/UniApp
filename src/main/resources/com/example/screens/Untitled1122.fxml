@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="360.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.screens.EnrolleeInfoController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="360.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="352.0" style="-fx-background-color: #1257c7;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация о студенте:">
+                     <font>
+                        <Font name="Georgia Bold" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="352.0">
+               <children>
+                  <AnchorPane prefHeight="42.0" prefWidth="352.0">
+                     <children>
+                        <Text layoutX="7.0" layoutY="25.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="ФИО" AnchorPane.leftAnchor="7.0" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </AnchorPane>
+                  <TextField fx:id="fio" alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="463.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets></TextField>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="352.0">
+               <children>
+                  <AnchorPane prefHeight="42.0" prefWidth="352.0">
+                     <children>
+                        <Text layoutX="7.0" layoutY="25.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата рождения" AnchorPane.leftAnchor="7.0" />
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="date" alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="463.0" />
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="352.0">
+               <children>
+                  <AnchorPane prefHeight="42.0" prefWidth="352.0">
+                     <children>
+                        <Text layoutX="7.0" layoutY="25.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Статус" AnchorPane.leftAnchor="7.0" />
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="status" alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="463.0" />
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="352.0">
+               <children>
+                  <AnchorPane prefHeight="42.0" prefWidth="352.0">
+                     <children>
+                        <Text layoutX="7.0" layoutY="25.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Почта" AnchorPane.leftAnchor="7.0" />
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="email" alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="463.0" />
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="352.0">
+               <children>
+                  <AnchorPane prefHeight="33.0" prefWidth="352.0">
+                     <children>
+                        <Text layoutX="5.0" layoutY="25.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Экзамены" AnchorPane.leftAnchor="5.0" />
+                        <TextArea fx:id="exams" layoutX="119.0" layoutY="2.0" prefHeight="38.0" prefWidth="233.0" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="352.0">
+               <children>
+                  <AnchorPane prefHeight="24.0" prefWidth="356.0">
+                     <children>
+                        <Text layoutX="8.0" layoutY="19.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Направления" AnchorPane.leftAnchor="8.0" />
+                        <TextArea fx:id="directions" layoutX="123.0" layoutY="3.0" prefHeight="25.0" prefWidth="233.0" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="352.0">
+               <children>
+                  <AnchorPane prefHeight="42.0" prefWidth="352.0">
+                     <children>
+                        <Text layoutX="8.0" layoutY="19.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="О себе" AnchorPane.leftAnchor="8.0" />
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="whyus" alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="463.0" />
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="352.0">
+               <children>
+                  <AnchorPane prefHeight="17.0" prefWidth="352.0">
+                     <children>
+                        <Text layoutX="11.0" layoutY="18.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Аттестат:" AnchorPane.leftAnchor="7.0" />
+                        <Text fx:id="diploma" layoutX="121.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Нет Аттестата" />
+                        <Button fx:id="buttonToOpenDiploma" layoutX="284.0" mnemonicParsing="false" onAction="#clickToOpenDiploma" text="Открыть" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="352.0">
+               <children>
+                  <AnchorPane prefHeight="19.0" prefWidth="352.0">
+                     <children>
+                        <Text layoutX="14.0" layoutY="17.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="ИД:" AnchorPane.leftAnchor="7.0" />
+                        <Text fx:id="graduation" layoutX="120.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Нет Документа" />
+                        <Button fx:id="buttonToOpenGraduation" layoutX="284.0" layoutY="1.0" mnemonicParsing="false" onAction="#clickToOpenGraduation" text="Открыть" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="editButton" minHeight="25.0" mnemonicParsing="false" onAction="#clickToEditButton" prefHeight="26.0" prefWidth="82.0" style="-fx-background-radius: 10;" text="ИЗМЕНИТЬ">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</AnchorPane>
